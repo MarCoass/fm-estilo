@@ -1,0 +1,37 @@
+body {
+  background: rgb(226, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(226, 0, 0, 1) 0%,
+    rgba(250, 140, 0, 1) 100%
+  );
+}
+
+#contenedor-general {
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#reproductor {
+  float: right;
+  
+}
+
+#cabecera {
+  background-image: url("assets/cabecera.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+
+#contenedor-tarjetas {
+  background-color: #080a12;
+}
+.tarjeta {
+  height: 300px;
+  width: 200px;
+  border-radius: 15px;
+  padding: 10px;
+}
