@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
-html{
+html {
   scroll-behavior: smooth;
 }
 * {
   padding: 0;
   line-height: 20px;
   color: whitesmoke;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   border-radius: 5px;
 }
 
@@ -30,7 +30,7 @@ nav {
   background-color: rgba(80, 80, 80, 0.4);
   position: sticky;
   top: 0px;
-  height: 50px;
+  height: max-content;
   align-self: stretch;
   z-index: 10;
 }
@@ -46,7 +46,14 @@ body {
   background-blend-mode: multiply, multiply;
   margin: 0;
 }
-
+footer{
+  background-color: rgba(29, 29, 29, 0.8);
+  padding-top: 10px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .contenedor {
   display: flex;
   gap: 15px;
@@ -144,13 +151,12 @@ span {
 
 #radio {
   margin-top: 20px;
-  padding-top: 30px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   text-align: center;
   box-shadow: 13px 16px 36px 4px rgba(0, 0, 0, 1);
-  
 }
 #contacto {
   display: flex;
@@ -187,4 +193,28 @@ i {
 
 #info p {
   width: 80vh;
+}
+@media (max-width: 700px) {
+
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0px 15px;
+  }
+  .aside {
+    display: none;
+  }
+  nav {
+    background-color: rgba(80, 80, 80, 0.4);
+    position: sticky;
+    top: 0px;
+    height: max-content;
+    align-self: stretch;
+    z-index: 10;
+  }
+  .container {
+    flex-direction: column;
+  }
 }
