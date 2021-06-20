@@ -1,37 +1,190 @@
-body {
-  background: rgb(226, 0, 0);
-  background: linear-gradient(
-    180deg,
-    rgba(226, 0, 0, 1) 0%,
-    rgba(250, 140, 0, 1) 100%
-  );
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  line-height: 20px;
+  color: whitesmoke;
+  font-family: 'Comfortaa', cursive;
+  border-radius: 5px;
 }
 
-#contenedor-general {
-  display: grid;
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+header {
+  background-image: url("assets/tec-sounds-radio-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  align-items: center;
 }
 
-#reproductor {
-  float: right;
+nav {
+  background-color: rgba(80, 80, 80, 0.4);
+  position: sticky;
+  top: 0px;
+  height: 50px;
+  align-self: stretch;
+  z-index: 10;
+}
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  background-image: linear-gradient(to bottom, #747272 0%, rgb(39, 39, 39) 90%);
+  background-blend-mode: multiply, multiply;
+  margin: 0;
+}
+
+.contenedor {
+  display: flex;
+  gap: 15px;
+  margin: 0px 15px;
+}
+.cuerpo {
+  flex: 3;
+}
+.aside {
+  background-color: rgba(29, 29, 29, 0.8);
+  position: sticky;
+  top: 20px;
+  left: 0;
+  margin: 20px 0;
+  align-self: stretch;
+  flex: 1;
+  display: grid;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 5px;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+.logo {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+}
+
+.container a {
+  text-align: center;
+  padding: 15px;
+}
+.container a:hover {
+  background-color: rgba(80, 80, 80, 0.8);
+}
+
+.programacion {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.programacion article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+section {
+  background-color: #747272;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  box-shadow: 13px 16px 36px 4px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 13px 16px 36px 4px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 13px 16px 36px 4px rgba(0, 0, 0, 1);
+}
+
+span {
+  display: inline-block;
+  background-color: rgba(80, 80, 80, 0.9);
+  position: relative;
+  top: 50%;
+  width: 100%;
+  padding: 5px 0px;
+  text-align: center;
+}
+.prog1 {
+  background-image: url("assets/500\ Greatest\ Albums\ of\ All\ Time.jpg");
+}
+.prog2 {
+  background-image: url(assets/prog2.jpg);
+}
+.prog3 {
+  background-image: url(assets/prog1.jpg);
+}
+.prog4 {
+  background-image: url(assets/Falling\ for\ you\ _Lukanette_.jpg);
+}
+.prog5 {
+  background-image: url(assets/How\ to\ Start\ Shooting\ More\ Concert\ Photography\ -\ FilterGrade.jpg);
+}
+.prog6 {
+  background-image: url(assets/prog3.jpg);
+}
+
+#radio {
+  margin-top: 20px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  box-shadow: 13px 16px 36px 4px rgba(0, 0, 0, 1);
   
 }
-
-#cabecera {
-  background-image: url("assets/cabecera.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 300px;
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul {
+  font-size: 1.5rem;
+  list-style: none;
+}
+li {
+  padding-bottom: 10px;
+}
+i {
+  padding-right: 10px;
 }
 
-#contenedor-tarjetas {
-  background-color: #080a12;
+#contacto a {
+  border-radius: 10px;
+  transition: background-color 1s 0s ease;
+  padding: 0 7px;
 }
-.tarjeta {
-  height: 300px;
-  width: 200px;
-  border-radius: 15px;
-  padding: 10px;
+
+#contacto a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#info p {
+  width: 80vh;
 }
